@@ -1,24 +1,46 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import SideBar from './layout/SideBar';
+import TopMenu from './layout/TopMenu';
 
 function App() {
+  
+const [tagleSideMenu, setTagleSideMenu] =useState(true);
+
+const [test, settest] =useState(false);
+  
+const handleTagleSideMenu=()=>{
+  setTagleSideMenu(!tagleSideMenu)
+}
+const hide=()=>{
+  settest(!test);
+  console.log("hide");
+}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+      
+      <div className="flex flex-col h-screen md:flex-row md:h-screen">
+      {/* Sidebar */}
+      <div className={`${test? "md:w-32":"md:w-64"}  flex-shrink-0`}>
+        {/* Sidebar Content */}
+        <SideBar test={test} tagleSideMenu={tagleSideMenu} setTagleSideMenu={setTagleSideMenu} handleTagleSideMenu={handleTagleSideMenu}/>
+      </div>
+
+      {/* Main Content Area */}
+      <div className="flex flex-col flex-1 overflow-hidden">
+        {/* Top Bar */}
+        <TopMenu tagleSideMenu={tagleSideMenu} setTagleSideMenu={setTagleSideMenu} handleTagleSideMenu={handleTagleSideMenu}/>
+
+        {/* Main Content */}
+        <div className="flex-1 overflow-y-auto p-4">
+          {/* Your main content goes here */}
+          <p>Main content area</p>
+          <button onClick={hide}>hide</button>
+        </div>
+      </div>
     </div>
+      </>
+      
   );
 }
 
