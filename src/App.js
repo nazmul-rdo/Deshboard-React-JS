@@ -20,20 +20,15 @@ const hide=()=>{
       <>
       
       <div className="flex flex-col h-screen md:flex-row md:h-screen">
-      {/* Sidebar */}
       <div className={`${test? "md:w-32":"md:w-64"}  flex-shrink-0`}>
-        {/* Sidebar Content */}
+     
         <SideBar test={test} tagleSideMenu={tagleSideMenu} setTagleSideMenu={setTagleSideMenu} handleTagleSideMenu={handleTagleSideMenu}/>
       </div>
 
-      {/* Main Content Area */}
       <div className="flex flex-col flex-1 overflow-hidden">
-        {/* Top Bar */}
         <TopMenu tagleSideMenu={tagleSideMenu} setTagleSideMenu={setTagleSideMenu} handleTagleSideMenu={handleTagleSideMenu}/>
 
-        {/* Main Content */}
         <div className="flex-1 overflow-y-auto p-4">
-          {/* Your main content goes here */}
           <p>Main content area</p>
           <button onClick={hide}>hide</button>
         </div>
