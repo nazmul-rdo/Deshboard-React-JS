@@ -133,7 +133,7 @@ const TopMenu = ({ tagleSideMenu, handleTagleSideMenu }) => {
                 {/* User Dropdown */}
                 <div className="hidden md:flex items-center gap-4 relative">
                     <button
-                        onMouseEnter={() =>setShowDropdown(true)} 
+                        onMouseEnter={() =>setShowDropdown(true)}  
                         className="menu-btn focus:outline-none focus:shadow-outline flex items-center">
                         <div className="w-8 h-8 overflow-hidden rounded-full">
                             <img className="w-full h-full object-cover" src={user} alt="User" />
@@ -145,7 +145,11 @@ const TopMenu = ({ tagleSideMenu, handleTagleSideMenu }) => {
                     </button>
 
                     {showDropdown && (
-                        <div className="absolute top-10 right-0 bg-white border border-gray-200 shadow-md rounded-md p-2 z-10">
+                        <div
+                        
+                        onMouseEnter={() =>setShowDropdown(true)}  
+                        onMouseLeave={() =>setShowDropdown(!showDropdown)} 
+                         className="absolute top-10 right-0 bg-white border border-gray-200 shadow-md rounded-md p-2 z-10">
                             {/* Dropdown items */}
                             <div className='w-44 min-h-16'>
                                 <div className='flex justify-center flex-col w-full items-center gap-3 py-4'>
