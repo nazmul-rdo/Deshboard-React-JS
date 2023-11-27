@@ -5,7 +5,7 @@ import TopMenu from './layout/TopMenu';
 
 function App() {
   
-const [tagleSideMenu, setTagleSideMenu] =useState(true);
+const [tagleSideMenu, setTagleSideMenu] = useState(true);
 
 const [test, settest] =useState(false);
   
