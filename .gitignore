@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Use a tool like `dos2unix` (Unix) or `unix2dos` (Windows) to convert line endings
+dos2unix src/App.js
+
