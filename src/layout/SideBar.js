@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const SideBar = ({tagleSideMenu, handleTagleSideMenu, test}) => {
 
@@ -17,14 +18,14 @@ const SideBar = ({tagleSideMenu, handleTagleSideMenu, test}) => {
 
           <p className="uppercase text-xs text-gray-600 mb-4 tracking-wider">home</p>
 
-          <a href="./index.html" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+          <Link href="/" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i className="fad fa-chart-pie text-xs mr-2"></i>
             Analytics dashboard
-          </a>
-          <a href="./index-1.html" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+          </Link>
+          <Link to="/" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i className="fad fa-shopping-cart text-xs mr-2"></i>
             ecommerce dashboard
-          </a>
+          </Link>
 
           <p className="uppercase text-xs text-gray-600 mb-4 mt-4 tracking-wider">apps</p>
 
