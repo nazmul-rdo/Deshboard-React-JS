@@ -15,7 +15,7 @@ const TopMenu = ({ tagleSideMenu, handleTagleSideMenu }) => {
                 <div className=" flex-none w-full flex flex-row items-center px-6 md:hidden">
                     <div className='flex gap-4'>
                         <img src={logo} className="w-10 flex-none" />
-                        <strong className="capitalize ml-1 flex-1">cleopatra</strong>
+                        <strong className="capitalize ml-1 flex-1">Eshop</strong>
                     </div>
 
                     <button
@@ -26,9 +26,9 @@ const TopMenu = ({ tagleSideMenu, handleTagleSideMenu }) => {
                     </button>
 
 
-                    <button 
-                    onMouseEnter={()=>setManu(true)} 
-                    className={`m-auto right-4 mr-6`}
+                    <button
+                        onMouseEnter={() => setManu(true)}
+                        className={`m-auto right-4 mr-6`}
                     >
                         <i className={`${tagleSideMenu ? 'fad fa-chevron-double-down' : 'fad fa-chevron-double-up'}`}></i>
                     </button>
@@ -43,7 +43,7 @@ const TopMenu = ({ tagleSideMenu, handleTagleSideMenu }) => {
                         </button>
 
                         <button
-                        onMouseEnter={() =>setShowDropdown(true)}
+                            onMouseEnter={() => setShowDropdown(true)}
                             className="menu-btn focus:outline-none focus:shadow-outline flex items-center">
                             <div className="w-8 h-8 overflow-hidden rounded-full">
                                 <img className="w-full h-full object-cover" src={user} alt="User" />
@@ -52,11 +52,11 @@ const TopMenu = ({ tagleSideMenu, handleTagleSideMenu }) => {
                         </button>
                         {/* Dropdown content */}
                         {showDropdown && (
-                            <div  
-                            onMouseEnter={() =>setShowDropdown(true)} 
-                            
-                            onMouseLeave={() =>setShowDropdown(!showDropdown)} 
-                            className="absolute top-10 right-0 bg-white border border-gray-200 shadow-md rounded-md p-2 z-10">
+                            <div
+                                onMouseEnter={() => setShowDropdown(true)}
+
+                                onMouseLeave={() => setShowDropdown(!showDropdown)}
+                                className="absolute top-10 right-0 bg-white border border-gray-200 shadow-md rounded-md p-2 z-10">
                                 {/* Dropdown items */}
                                 <div className='w-44 min-h-16'>
                                     <div className='flex justify-center flex-col w-full items-center gap-3 py-4'>
@@ -79,24 +79,24 @@ const TopMenu = ({ tagleSideMenu, handleTagleSideMenu }) => {
 
                 {menu && (
                     <div
-                    className='w-32 h-8'
-                    onMouseEnter={()=>setManu(true)}
-                    onMouseOut={()=>setManu(!menu)}
+                        className='w-32 h-8'
+                        onMouseEnter={() => setManu(true)}
+                        onMouseOut={() => setManu(!menu)}
                     >
-                    <div
-                    
-                    className="absolute top-10 right-24 z-10 dropdowntext-gray-600 w-32 min-h-4 gap-4 flex flex-row justify-center items-center md:hidden">
-                    <a className="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i className="fad fa-envelope-open-text"></i></a>
-                    <a className="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i className="fad fa-comments-alt"></i></a>
-                    <a className="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i className="fad fa-check-circle"></i></a>
-                    <a className="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i className="fad fa-calendar-exclamation"></i></a>
-                </div>
-                </div>
+                        <div
+
+                            className="absolute top-10 right-24 z-10 dropdowntext-gray-600 w-32 min-h-4 gap-4 flex flex-row justify-center items-center md:hidden">
+                            <a className="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i className="fad fa-envelope-open-text"></i></a>
+                            <a className="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i className="fad fa-comments-alt"></i></a>
+                            <a className="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i className="fad fa-check-circle"></i></a>
+                            <a className="mr-2 transition duration-500 ease-in-out hover:text-gray-900" href="#" title="email"><i className="fad fa-calendar-exclamation"></i></a>
+                        </div>
+                    </div>
                 )}
                 {/* desktop manu */}
                 <div className="hidden md:flex-none w-32 md:flex md:flex-row md:items-center">
                     <img src={logo} className="w-10 flex-none" />
-                    <strong className="capitalize ml-1 flex-1">cleopatra</strong>
+                    <strong className="capitalize ml-1 flex-1">E-shop</strong>
 
                     <button
                         onClick={handleTagleSideMenu}
@@ -106,7 +106,7 @@ const TopMenu = ({ tagleSideMenu, handleTagleSideMenu }) => {
                     </button>
 
 
-                    <button onMouseEnter={()=>setManu(true)} id="navbarToggle" className={`md:hidden ml-auto right-0 mr-6`}
+                    <button onMouseEnter={() => setManu(true)} id="navbarToggle" className={`md:hidden ml-auto right-0 mr-6`}
                     >
                         <i className={`${menu ? 'fad fa-chevron-double-down' : 'fad fa-chevron-double-up'}`}></i>
 
@@ -133,7 +133,7 @@ const TopMenu = ({ tagleSideMenu, handleTagleSideMenu }) => {
                 {/* User Dropdown */}
                 <div className="hidden md:flex items-center gap-4 relative">
                     <button
-                        onMouseEnter={() =>setShowDropdown(true)}  
+                        onMouseEnter={() => setShowDropdown(true)}
                         className="menu-btn focus:outline-none focus:shadow-outline flex items-center">
                         <div className="w-8 h-8 overflow-hidden rounded-full">
                             <img className="w-full h-full object-cover" src={user} alt="User" />
@@ -146,10 +146,10 @@ const TopMenu = ({ tagleSideMenu, handleTagleSideMenu }) => {
 
                     {showDropdown && (
                         <div
-                        
-                        onMouseEnter={() =>setShowDropdown(true)}  
-                        onMouseLeave={() =>setShowDropdown(!showDropdown)} 
-                         className="absolute top-10 right-0 bg-white border border-gray-200 shadow-md rounded-md p-2 z-10">
+
+                            onMouseEnter={() => setShowDropdown(true)}
+                            onMouseLeave={() => setShowDropdown(!showDropdown)}
+                            className="absolute top-10 right-0 bg-white border border-gray-200 shadow-md rounded-md p-2 z-10">
                             {/* Dropdown items */}
                             <div className='w-44 min-h-16'>
                                 <div className='flex justify-center flex-col w-full items-center gap-3 py-4'>

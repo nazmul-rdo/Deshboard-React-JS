@@ -18,7 +18,7 @@ const SideBar = ({tagleSideMenu, handleTagleSideMenu, test}) => {
 
           <p className="uppercase text-xs text-gray-600 mb-4 tracking-wider">home</p>
 
-          <Link href="/" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+          <Link to="/analytics" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i className="fad fa-chart-pie text-xs mr-2"></i>
             Analytics dashboard
           </Link>
@@ -55,44 +55,23 @@ const SideBar = ({tagleSideMenu, handleTagleSideMenu, test}) => {
           </a>
 
 
-          <p className="uppercase text-xs text-gray-600 mb-4 mt-4 tracking-wider">UI Elements</p>
+          <p className="uppercase text-xs text-gray-600 mb-4 mt-4 tracking-wider">Products</p>
 
-          <a href="./typography.html" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+          <Link to="/products" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i className="fad fa-text text-xs mr-2"></i>
-            typography
-          </a>
-          <a href="./alert.html" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+            Products List
+          </Link>
+          <Link to="/addproducts" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i className="fad fa-whistle text-xs mr-2"></i>
-            alerts
-          </a>
-          <a href="./buttons.html" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
-            <i className="fad fa-cricket text-xs mr-2"></i>
-            buttons
-          </a>
-          <a href="#" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+            Add products
+          </Link>
+
+          <Link to="/cat" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i className="fad fa-box-open text-xs mr-2"></i>
-            Content
-          </a>
-          <a href="#" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
-            <i className="fad fa-swatchbook text-xs mr-2"></i>
-            colors
-          </a>
-          <a href="#" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
-            <i className="fad fa-atom-alt text-xs mr-2"></i>
-            icons
-          </a>
-          <a href="#" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
-            <i className="fad fa-club text-xs mr-2"></i>
-            card
-          </a>
-          <a href="#" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
-            <i className="fad fa-cheese-swiss text-xs mr-2"></i>
-            Widgets
-          </a>
-          <a href="#" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
-            <i className="fad fa-computer-classic text-xs mr-2"></i>
-            Components
-          </a>
+            Catagories
+          </Link>
+          
+          
 
 
         </div>

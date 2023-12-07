@@ -5,6 +5,9 @@ import TopMenu from './layout/TopMenu';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Deshboard from './pages/deshboard/index'
+import AnalyticsDeshboard from './pages/analytics/index';
+import ProductsList from './pages/products/ProductsList';
+import AddNewProduct from './pages/products/AddNewProduct';
 
 function App() {
 
@@ -31,9 +34,14 @@ function App() {
         <div className="flex flex-col flex-1 overflow-hidden">
           <TopMenu tagleSideMenu={tagleSideMenu} setTagleSideMenu={setTagleSideMenu} handleTagleSideMenu={handleTagleSideMenu} />
 
-          <div className="flex-1 overflow-y-auto p-4">
+          <div className="flex-1 overflow-y-auto p-4 max-h-full overflow-hidden overflow-y-scroll">
             <Routes>
               <Route path='/' element={<Deshboard />} />
+              <Route path='/analytics' element={<AnalyticsDeshboard />} />
+              
+              <Route path='/products' element={<ProductsList />} />
+              
+              <Route path='/addproducts' element={<AddNewProduct />} />
             </Routes>
           </div>
         </div>
