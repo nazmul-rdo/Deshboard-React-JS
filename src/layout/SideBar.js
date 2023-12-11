@@ -41,10 +41,10 @@ const SideBar = ({tagleSideMenu, handleTagleSideMenu, test}) => {
             <i className="fad fa-shield-check text-xs mr-2"></i>
             todo
           </a>
-          <a href="#" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+          <Link to="/calendar" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i className="fad fa-calendar-edit text-xs mr-2"></i>
             calendar
-          </a>
+          </Link>
           <a href="#" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i className="fad fa-file-invoice-dollar text-xs mr-2"></i>
             invoice

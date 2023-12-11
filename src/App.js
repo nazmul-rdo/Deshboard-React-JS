@@ -8,6 +8,7 @@ import Deshboard from './pages/deshboard/index'
 import AnalyticsDeshboard from './pages/analytics/index';
 import ProductsList from './pages/products/ProductsList';
 import AddNewProduct from './pages/products/AddNewProduct';
+import Calendar from './components/Calendar';
 
 function App() {
 
@@ -42,6 +43,8 @@ function App() {
               <Route path='/products' element={<ProductsList />} />
               
               <Route path='/addproducts' element={<AddNewProduct />} />
+              
+              <Route path='/calendar' element={<Calendar />} />
             </Routes>
           </div>
         </div>
