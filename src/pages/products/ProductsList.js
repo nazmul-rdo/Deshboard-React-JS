@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProductsList = ({ }) => {
+const ProductsList = () => {
     const products = [
         { id: 1, name: 'Laptop', price: '$999.99', stock: 10, category: 'Electronics' },
         { id: 2, name: 'Phone', price: '$699.99', stock: 15, category: 'Electronics' },
@@ -17,7 +17,7 @@ const ProductsList = ({ }) => {
 
     return (
         <>
-            <div className="p-6 bg-white rounded-lg shadow">
+            <div className="bg-white rounded-lg shadow">
                 <h2 className="text-xl font-semibold mb-6">Product List</h2>
                 <div className="overflow-x-auto">
                     <table className="w-full table-auto">
