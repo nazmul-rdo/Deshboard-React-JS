@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
 
 const ProductsList = ({products}) => {
 
   return (
     <>
       <div className="bg-white rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-6">Product List</h2>
-        {products.length}
+        <h2 className="text-xl font-semibold p-5">Product List</h2>
         <div className="overflow-x-auto">
           <table className="w-full table-auto">
             <thead>
@@ -24,7 +22,7 @@ const ProductsList = ({products}) => {
                   <td className="py-4 px-6">{product.id}</td>
                   <td className="py-4 px-6">{product.name}</td>
                   <td className="py-4 px-6">{product.category}</td>
-                  <td className="py-4 px-6">{product.price}</td>
+                  <td className="py-4 px-6">${product.price}</td>
                   <td className="py-4 px-6">{product.stock}</td>
                 </tr>
               ))}

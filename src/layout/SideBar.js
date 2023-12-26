@@ -33,10 +33,10 @@ const SideBar = ({tagleSideMenu, handleTagleSideMenu, test}) => {
             <i className="fad fa-envelope-open-text text-xs mr-2"></i>
             email
           </a>
-          <a href="#" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+          <Link to="/chat" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i className="fad fa-comments text-xs mr-2"></i>
             chat
-          </a>
+          </Link>
           <a href="#" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i className="fad fa-shield-check text-xs mr-2"></i>
             todo
@@ -54,7 +54,6 @@ const SideBar = ({tagleSideMenu, handleTagleSideMenu, test}) => {
             file manager
           </a>
 
-
           <p className="uppercase text-xs text-gray-600 mb-4 mt-4 tracking-wider">Products</p>
 
           <Link to="/products" className="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
@@ -70,10 +69,6 @@ const SideBar = ({tagleSideMenu, handleTagleSideMenu, test}) => {
             <i className="fad fa-box-open text-xs mr-2"></i>
             Catagories
           </Link>
-          
-          
-
-
         </div>
 
       </div>
