@@ -16,7 +16,7 @@ function App() {
 
   const [tagleSideMenu, setTagleSideMenu] = useState(true);
 
-  // const [test, settest] = useState(false);
+  const [test, settest] = useState(false);
 
   const handleTagleSideMenu = () => {
     setTagleSideMenu(!tagleSideMenu)
